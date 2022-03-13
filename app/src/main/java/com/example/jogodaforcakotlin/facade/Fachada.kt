@@ -33,14 +33,14 @@ class Fachada {
          return output
      }
 
-    fun status(): String {
+    fun infos(): String {
         var output = ""
 
         output += "Tamanho da palavra: ${jogo.getTamanho()}\n"
-        output += "Letras distintas:   ${jogo.LetrasDistintas()}\n"
-        output += "Letras usadas:      [${jogo.getLetrasUsadas()}]\n"
+        output += "Letras diferentes:   ${jogo.LetrasDistintas()}\n"
+        output += "Letras utilizadas:      [${jogo.getLetrasUsadas()}]\n"
+        output += "Tentativas:         ${jogo.getTentativas()}\n"
         output += "Acertos:            ${jogo.getAcertos()}\n"
-        output += "Tentativas:         ${jogo.getTentativas()}"
 
         return output
     }

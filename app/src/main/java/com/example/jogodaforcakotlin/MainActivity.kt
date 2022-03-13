@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fachada: Fachada
     private lateinit var tvdica: TextView
     private lateinit var tvpalavra: TextView
+    private lateinit var tvinfos: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState) //implementação on create da sua super classe
@@ -21,8 +22,12 @@ class MainActivity : AppCompatActivity() {
 
         this.tvdica = findViewById(R.id.TextViewDica)
         this.tvdica.text = fachada.diquinha()
+
         tvpalavra = findViewById(R.id.textViewPalavra)
         this.tvpalavra.text = fachada.palavrota()
+
+        tvinfos = findViewById(R.id.textViewinfos)
+        tvinfos.text = fachada.infos()
     }
 }
 
